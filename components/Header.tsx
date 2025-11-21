@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { Phone, Mail, Menu, X } from 'lucide-react'
 import { Button } from './ui/button'
@@ -32,11 +33,15 @@ export default function Header() {
       {/* Main Navigation */}
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex items-center">
-            <div className="text-2xl font-bold">
-              <span className="text-[#0068B3]">AA</span>
-              <span className="text-gray-800"> Exterior Cleaning</span>
-            </div>
+          <Link href="/" className="flex items-center gap-3">
+            <Image 
+              src="/logo.png" 
+              alt="AA Exterior Cleaning Logo" 
+              width={180}
+              height={60}
+              priority
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

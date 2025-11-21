@@ -21,6 +21,14 @@ export const metadata: Metadata = {
     'eco-friendly cleaning',
     'licensed pressure washing'
   ],
+  icons: {
+    icon: [
+      { url: '/favicon_io (1)/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon_io (1)/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon_io (1)/favicon.ico' }
+    ],
+    apple: '/favicon_io (1)/apple-touch-icon.png',
+  },
   openGraph: {
     title: 'AA Exterior Cleaning | Jacksonville\'s Premier Exterior Cleaning',
     description: 'Licensed & insured exterior cleaning specialists. Soft washing, pressure washing, roof cleaning, and commercial services.',
