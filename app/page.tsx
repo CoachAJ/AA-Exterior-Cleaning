@@ -23,7 +23,7 @@ export default function HomePage() {
             {/* Left Content */}
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                The Premier Exterior & Roof Cleaning Specialists in Jacksonville, FL
+                The Premier Exterior Cleaning Specialists in Jacksonville, FL
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-blue-50">
                 Professional soft washing and pressure washing services. Licensed, insured, and committed to protecting your property.
