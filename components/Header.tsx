@@ -42,8 +42,10 @@ export default function Header() {
               priority
               className="h-16 w-auto"
             />
-            <span className="text-2xl font-bold text-gray-800 hidden sm:block">
-              AA&apos;s Exterior Cleaning
+            <span className="text-2xl font-bold hidden sm:block">
+              <span className="bg-gradient-to-r from-[#0068B3] to-[#3CAADF] bg-clip-text text-transparent hover:from-[#3CAADF] hover:to-[#0068B3] transition-all duration-500">
+                AA&apos;s Exterior Cleaning
+              </span>
             </span>
           </Link>
 

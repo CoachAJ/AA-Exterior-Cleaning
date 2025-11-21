@@ -9,7 +9,9 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">
-              AA&apos;s Exterior Cleaning
+              <span className="bg-gradient-to-r from-[#3CAADF] to-white bg-clip-text text-transparent">
+                AA&apos;s Exterior Cleaning
+              </span>
             </h3>
             <p className="text-gray-400 mb-4">
               Jacksonville's premier exterior cleaning specialists. Licensed, insured, and committed to excellence.
@@ -83,12 +85,12 @@ export default function Footer() {
           <p className="text-gray-400 text-sm">
             © {new Date().getFullYear()} AA's Exterior Cleaning. All rights reserved.
           </p>
-          <div className="flex gap-4 text-gray-400 text-sm">
-            <span>EPA Compliant</span>
+          <div className="flex gap-4 text-gray-400 text-sm flex-wrap justify-center">
+            <span className="hover:text-[#3CAADF] transition-colors cursor-default">EPA Compliant</span>
             <span>•</span>
-            <span>Eco-Friendly Solutions</span>
+            <span className="hover:text-[#3CAADF] transition-colors cursor-default">Eco-Friendly Solutions</span>
             <span>•</span>
-            <span>Satisfaction Guaranteed</span>
+            <span className="hover:text-[#3CAADF] transition-colors cursor-default">Satisfaction Guaranteed</span>
           </div>
         </div>
       </div>
