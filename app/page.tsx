@@ -30,7 +30,7 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">
-                  <Button size="lg" className="bg-white text-[#0068B3] hover:bg-gray-100 text-lg px-8 py-6 h-auto">
+                  <Button size="lg" className="bg-gradient-to-r from-white to-gray-50 text-[#0068B3] hover:from-[#FFB81C] hover:to-[#F58A34] hover:text-white hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-2xl text-lg px-8 py-6 h-auto font-bold animate-pulse">
                     Schedule Your Free Estimate
                   </Button>
                 </Link>
@@ -53,8 +53,8 @@ export default function HomePage() {
                 <Image 
                   src="/logo.png" 
                   alt="AA Exterior Cleaning Logo" 
-                  width={300}
-                  height={225}
+                  width={240}
+                  height={180}
                   priority
                   className="w-full h-auto"
                 />
