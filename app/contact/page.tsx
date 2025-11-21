@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
+import { redirect } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
+import { submitContactForm } from '@/app/actions/contact'
 
 export const metadata: Metadata = {
   title: 'Contact Us | AA Exterior Cleaning Jacksonville',
@@ -12,6 +14,12 @@ export const metadata: Metadata = {
     'exterior cleaning estimate',
     'jacksonville cleaning services contact'
   ]
+}
+
+async function handleSubmit(formData: FormData) {
+  'use server'
+  await submitContactForm(formData)
+  redirect('/success')
 }
 
 export default function ContactPage() {
@@ -43,23 +51,7 @@ export default function ContactPage() {
                 Fill out the form below and we'll get back to you within 24 hours with a detailed quote for your project.
               </p>
 
-              <form 
-                name="contact" 
-                method="POST" 
-                data-netlify="true" 
-                netlify-honeypot="bot-field"
-                action="/success"
-                className="space-y-6"
-              >
-                {/* Netlify form name - required for form detection */}
-                <input type="hidden" name="form-name" value="contact" />
-                
-                {/* Honeypot field for spam protection */}
-                <p className="hidden">
-                  <label>
-                    Don't fill this out if you're human: <input name="bot-field" />
-                  </label>
-                </p>
+              <form action={handleSubmit} className="space-y-6">
 
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
