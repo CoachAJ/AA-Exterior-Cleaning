@@ -1,0 +1,9 @@
+# robots.txt for AA Exterior Cleaning
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://aa-exterior-cleaning.netlify.app/sitemap.xml
+
+# Disallow admin or system pages (add as needed)
+# Disallow: /admin/
