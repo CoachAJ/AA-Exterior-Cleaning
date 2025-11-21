@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { 
   Droplets, 
@@ -18,29 +19,46 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#0068B3] to-[#3CAADF] text-white py-20 md:py-32">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              The Premier Exterior & Roof Cleaning Specialists in Jacksonville, FL
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-50">
-              Professional soft washing and pressure washing services. Licensed, insured, and committed to protecting your property.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact">
-                <Button size="lg" className="bg-white text-[#0068B3] hover:bg-gray-100 text-lg px-8 py-6 h-auto">
-                  Schedule Your Free Estimate
-                </Button>
-              </Link>
-              <a href="tel:9047045962">
-                <Button size="lg" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6 h-auto">
-                  <Phone className="mr-2 h-5 w-5" />
-                  (904) 704-5962
-                </Button>
-              </a>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                The Premier Exterior & Roof Cleaning Specialists in Jacksonville, FL
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 text-blue-50">
+                Professional soft washing and pressure washing services. Licensed, insured, and committed to protecting your property.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/contact">
+                  <Button size="lg" className="bg-white text-[#0068B3] hover:bg-gray-100 text-lg px-8 py-6 h-auto">
+                    Schedule Your Free Estimate
+                  </Button>
+                </Link>
+                <a href="tel:9047045962">
+                  <Button size="lg" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6 h-auto">
+                    <Phone className="mr-2 h-5 w-5" />
+                    (904) 704-5962
+                  </Button>
+                </a>
+              </div>
+              <div className="mt-8 flex items-center gap-2">
+                <Shield className="h-6 w-6 text-yellow-300" />
+                <span className="text-sm">Florida Licensed & Insured | Lic #L25000489655</span>
+              </div>
             </div>
-            <div className="mt-8 flex items-center gap-2">
-              <Shield className="h-6 w-6 text-yellow-300" />
-              <span className="text-sm">Florida Licensed & Insured | Lic #L25000489655</span>
+
+            {/* Right Logo */}
+            <div className="hidden lg:flex justify-center items-center">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+                <Image 
+                  src="/logo.png" 
+                  alt="AA Exterior Cleaning Logo" 
+                  width={400}
+                  height={300}
+                  priority
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
           </div>
         </div>
