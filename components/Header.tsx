@@ -37,10 +37,10 @@ export default function Header() {
             <Image 
               src="/logo.png" 
               alt="AA Exterior Cleaning Logo" 
-              width={180}
-              height={60}
+              width={240}
+              height={80}
               priority
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 
