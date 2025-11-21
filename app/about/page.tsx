@@ -13,8 +13,8 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Us | AA's Exterior Cleaning Jacksonville, FL',
-  description: 'Learn about AA's Exterior Cleaning - Jacksonville\'s trusted exterior cleaning specialists. Licensed FL #L25000489655, insured, OSHA-compliant, and committed to excellence since day one.',
+  title: 'About Us | AA\'s Exterior Cleaning Jacksonville, FL',
+  description: 'Learn about AA\'s Exterior Cleaning - Jacksonville\'s trusted exterior cleaning specialists. Licensed FL #L25000489655, insured, OSHA-compliant, and committed to excellence since day one.',
   keywords: [
     'about aa exterior cleaning',
     'licensed pressure washing jacksonville',

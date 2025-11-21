@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/button'
 import { CheckCircle, Phone, Home } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Thank You | AA's Exterior Cleaning',
-  description: 'Thank you for contacting AA's Exterior Cleaning. We will respond to your inquiry within 24 hours.',
+  title: 'Thank You | AA\'s Exterior Cleaning',
+  description: 'Thank you for contacting AA\'s Exterior Cleaning. We will respond to your inquiry within 24 hours.',
 }
 
 export default function SuccessPage() {

@@ -13,7 +13,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Residential Exterior Cleaning Services | AA's Exterior Cleaning Jacksonville',
+  title: 'Residential Exterior Cleaning Services | AA\'s Exterior Cleaning Jacksonville',
   description: 'Professional residential soft washing and pressure washing services in Jacksonville, FL. Roof cleaning, house washing, driveway cleaning, and more. Licensed & insured FL #L25000489655.',
   keywords: [
     'house washing jacksonville',
