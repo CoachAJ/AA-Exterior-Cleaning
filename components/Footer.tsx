@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">
-              <span className="text-[#3CAADF]">AA</span> Exterior Cleaning
+              AA&apos;s Exterior Cleaning
             </h3>
             <p className="text-gray-400 mb-4">
               Jacksonville's premier exterior cleaning specialists. Licensed, insured, and committed to excellence.

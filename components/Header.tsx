@@ -42,6 +42,9 @@ export default function Header() {
               priority
               className="h-16 w-auto"
             />
+            <span className="text-2xl font-bold text-gray-800 hidden sm:block">
+              AA&apos;s Exterior Cleaning
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
