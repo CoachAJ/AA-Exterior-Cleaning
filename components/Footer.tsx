@@ -81,7 +81,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} AA Exterior Cleaning. All rights reserved.
+            © {new Date().getFullYear()} AA's Exterior Cleaning. All rights reserved.
           </p>
           <div className="flex gap-4 text-gray-400 text-sm">
             <span>EPA Compliant</span>

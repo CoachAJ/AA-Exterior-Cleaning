@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AA Exterior Cleaning | Pressure Washing & Soft Washing Jacksonville, FL',
+  title: 'AA's Exterior Cleaning | Pressure Washing & Soft Washing Jacksonville, FL',
   description: 'Professional exterior cleaning services in Jacksonville, FL. Licensed & insured. Specializing in soft washing, pressure washing, roof cleaning, and commercial exterior cleaning. Florida Lic #L25000489655. Call 904-704-5962.',
   keywords: [
     'pressure washing jacksonville fl',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     apple: '/favicon_io (1)/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'AA Exterior Cleaning | Jacksonville\'s Premier Exterior Cleaning',
+    title: 'AA's Exterior Cleaning | Jacksonville\'s Premier Exterior Cleaning',
     description: 'Licensed & insured exterior cleaning specialists. Soft washing, pressure washing, roof cleaning, and commercial services.',
     type: 'website',
     locale: 'en_US',

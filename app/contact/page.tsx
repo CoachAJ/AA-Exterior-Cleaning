@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import { submitContactForm } from '@/app/actions/contact'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | AA Exterior Cleaning Jacksonville',
+  title: 'Contact Us | AA's Exterior Cleaning Jacksonville',
   description: 'Get a free quote for professional exterior cleaning services in Jacksonville, FL. Call (904) 704-5962 or fill out our contact form. Licensed & insured.',
   keywords: [
     'contact aa exterior cleaning',

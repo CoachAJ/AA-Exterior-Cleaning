@@ -13,8 +13,8 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Us | AA Exterior Cleaning Jacksonville, FL',
-  description: 'Learn about AA Exterior Cleaning - Jacksonville\'s trusted exterior cleaning specialists. Licensed FL #L25000489655, insured, OSHA-compliant, and committed to excellence since day one.',
+  title: 'About Us | AA's Exterior Cleaning Jacksonville, FL',
+  description: 'Learn about AA's Exterior Cleaning - Jacksonville\'s trusted exterior cleaning specialists. Licensed FL #L25000489655, insured, OSHA-compliant, and committed to excellence since day one.',
   keywords: [
     'about aa exterior cleaning',
     'licensed pressure washing jacksonville',
@@ -48,7 +48,7 @@ export default function AboutPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Our Commitment to Excellence</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-gray-700 mb-4">
-                At <strong>AA Exterior Cleaning</strong>, we understand that your property is one of your most valuable investments. Whether it's your home or your business, maintaining its exterior is crucial for preserving its value, enhancing curb appeal, and ensuring a safe environment.
+                At <strong>AA's Exterior Cleaning</strong>, we understand that your property is one of your most valuable investments. Whether it's your home or your business, maintaining its exterior is crucial for preserving its value, enhancing curb appeal, and ensuring a safe environment.
               </p>
               <p className="text-lg text-gray-700 mb-4">
                 We specialize in <strong>soft washing and pressure washing services</strong> throughout Jacksonville and Northeast Florida. Our team combines years of expertise with state-of-the-art equipment to deliver results that exceed expectations—every single time.
@@ -65,7 +65,7 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            Why Choose AA Exterior Cleaning?
+            Why Choose AA's Exterior Cleaning?
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -244,7 +244,7 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-gradient-to-r from-[#0068B3] to-[#3CAADF] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Experience the AA Exterior Cleaning Difference
+            Experience the AA's Exterior Cleaning Difference
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Join hundreds of satisfied customers who trust us with their most valuable asset.

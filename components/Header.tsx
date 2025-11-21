@@ -36,7 +36,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3">
             <Image 
               src="/logo.png" 
-              alt="AA Exterior Cleaning Logo" 
+              alt="AA's Exterior Cleaning Logo" 
               width={240}
               height={80}
               priority

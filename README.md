@@ -1,6 +1,6 @@
-# AA Exterior Cleaning - Jacksonville, FL
+# AA's Exterior Cleaning - Jacksonville, FL
 
-A high-performance, SEO-optimized website for AA Exterior Cleaning, a professional exterior cleaning company serving Jacksonville and Northeast Florida.
+A high-performance, SEO-optimized website for AA's Exterior Cleaning, a professional exterior cleaning company serving Jacksonville and Northeast Florida.
 
 ## 🌟 Features
 
@@ -20,7 +20,7 @@ A high-performance, SEO-optimized website for AA Exterior Cleaning, a profession
 
 ## 📋 Company Information
 
-- **Company**: AA Exterior Cleaning
+- **Company**: AA's Exterior Cleaning
 - **Location**: Jacksonville, Florida (Duval County, Northeast Florida)
 - **License**: Florida Lic #L25000489655
 - **Phone**: (904) 704-5962
@@ -29,7 +29,7 @@ A high-performance, SEO-optimized website for AA Exterior Cleaning, a profession
 ## 🏗️ Project Structure
 
 ```
-AA Exterior Cleaning/
+AA's Exterior Cleaning/
 ├── app/
 │   ├── about/
 │   │   └── page.tsx          # About Us page
@@ -79,7 +79,7 @@ AA Exterior Cleaning/
 
 ### About Us (`/about`)
 - Company mission and values
-- Why choose AA Exterior Cleaning
+- Why choose AA's Exterior Cleaning
 - Process overview
 - Service areas
 
@@ -130,7 +130,7 @@ npm start
 
 ```tsx
 <Link href="/" className="flex items-center">
-  <Image src="/logo.png" alt="AA Exterior Cleaning" width={150} height={50} />
+  <Image src="/logo.png" alt="AA's Exterior Cleaning" width={150} height={50} />
 </Link>
 ```
 
@@ -243,10 +243,10 @@ For additional customization or support with this website, you can:
 
 ## 📄 License
 
-This website is created for AA Exterior Cleaning. All rights reserved.
+This website is created for AA's Exterior Cleaning. All rights reserved.
 
 ---
 
-**Built with ❤️ for AA Exterior Cleaning**
+**Built with ❤️ for AA's Exterior Cleaning**
 
 For technical questions about the website, consult the Next.js documentation: https://nextjs.org/docs

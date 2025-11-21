@@ -13,7 +13,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Commercial Exterior Cleaning Services | AA Exterior Cleaning Jacksonville',
+  title: 'Commercial Exterior Cleaning Services | AA's Exterior Cleaning Jacksonville',
   description: 'Professional, EPA-compliant commercial exterior cleaning in Jacksonville, FL. Storefront washing, parking lot cleaning, dumpster pad sanitization. Licensed & insured. 24/7 availability.',
   keywords: [
     'commercial pressure washing jacksonville',
@@ -342,7 +342,7 @@ export default function CommercialPage() {
       <section className="py-16 md:py-24 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            Why Businesses Choose AA Exterior Cleaning
+            Why Businesses Choose AA's Exterior Cleaning
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
