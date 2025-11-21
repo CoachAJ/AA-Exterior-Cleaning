@@ -1,33 +1,20 @@
-'use client'
-
-import { useState } from 'react'
 import type { Metadata } from 'next'
 import { Button } from '@/components/ui/button'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 
+export const metadata: Metadata = {
+  title: 'Contact Us | AA Exterior Cleaning Jacksonville',
+  description: 'Get a free quote for professional exterior cleaning services in Jacksonville, FL. Call (904) 704-5962 or fill out our contact form. Licensed & insured.',
+  keywords: [
+    'contact aa exterior cleaning',
+    'free quote jacksonville',
+    'pressure washing quote',
+    'exterior cleaning estimate',
+    'jacksonville cleaning services contact'
+  ]
+}
+
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    serviceType: '',
-    propertyType: '',
-    message: ''
-  })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Form submission logic would go here
-    console.log('Form submitted:', formData)
-    alert('Thank you for your inquiry! We will contact you shortly.')
-  }
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
 
   return (
     <div className="flex flex-col">
@@ -56,7 +43,24 @@ export default function ContactPage() {
                 Fill out the form below and we'll get back to you within 24 hours with a detailed quote for your project.
               </p>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form 
+                name="contact" 
+                method="POST" 
+                data-netlify="true" 
+                netlify-honeypot="bot-field"
+                action="/success"
+                className="space-y-6"
+              >
+                {/* Netlify form name - required for form detection */}
+                <input type="hidden" name="form-name" value="contact" />
+                
+                {/* Honeypot field for spam protection */}
+                <p className="hidden">
+                  <label>
+                    Don't fill this out if you're human: <input name="bot-field" />
+                  </label>
+                </p>
+
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                     Full Name *
@@ -66,8 +70,6 @@ export default function ContactPage() {
                     id="name"
                     name="name"
                     required
-                    value={formData.name}
-                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
                   />
                 </div>
@@ -82,8 +84,6 @@ export default function ContactPage() {
                       id="email"
                       name="email"
                       required
-                      value={formData.email}
-                      onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
                     />
                   </div>
@@ -97,8 +97,6 @@ export default function ContactPage() {
                       id="phone"
                       name="phone"
                       required
-                      value={formData.phone}
-                      onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
                     />
                   </div>
@@ -113,8 +111,6 @@ export default function ContactPage() {
                       id="serviceType"
                       name="serviceType"
                       required
-                      value={formData.serviceType}
-                      onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
                     >
                       <option value="">Select a service...</option>
@@ -137,8 +133,6 @@ export default function ContactPage() {
                       id="propertyType"
                       name="propertyType"
                       required
-                      value={formData.propertyType}
-                      onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
                     >
                       <option value="">Select property type...</option>
@@ -157,8 +151,6 @@ export default function ContactPage() {
                     id="message"
                     name="message"
                     rows={5}
-                    value={formData.message}
-                    onChange={handleChange}
                     placeholder="Please describe your cleaning needs, property size, and any specific concerns..."
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
                   ></textarea>
