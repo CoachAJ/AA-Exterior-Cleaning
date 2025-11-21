@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://aa-exterior-cleaning.netlify.app/sitemap.xml
+Sitemap: https://aaexteriorcleaning.com/sitemap.xml
 
 # Disallow admin or system pages (add as needed)
 # Disallow: /admin/
