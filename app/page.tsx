@@ -53,8 +53,8 @@ export default function HomePage() {
                 <Image 
                   src="/logo.png" 
                   alt="AA Exterior Cleaning Logo" 
-                  width={400}
-                  height={300}
+                  width={300}
+                  height={225}
                   priority
                   className="w-full h-auto"
                 />
