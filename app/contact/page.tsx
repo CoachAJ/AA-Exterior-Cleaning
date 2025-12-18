@@ -6,7 +6,7 @@ import { submitContactForm } from '@/app/actions/contact'
 
 export const metadata: Metadata = {
   title: 'Contact Us | AA\'s Exterior Cleaning Jacksonville',
-  description: 'Get a free quote for professional exterior cleaning services in Jacksonville, FL. Call (904) 704-5962 or fill out our contact form. Licensed & insured.',
+  description: 'Get a free quote for professional exterior cleaning services in Jacksonville, FL. Call (904) 767-3233 or fill out our contact form. Licensed & insured.',
   keywords: [
     'contact aa exterior cleaning',
     'free quote jacksonville',
@@ -165,8 +165,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">Phone</h3>
-                    <a href="tel:9047045962" className="text-[#0068B3] text-xl font-semibold hover:underline">
-                      (904) 704-5962
+                    <a href="tel:9047673233" className="text-[#0068B3] text-xl font-semibold hover:underline">
+                      (904) 767-3233
                     </a>
                     <p className="text-gray-600 text-sm mt-1">Available for calls and text messages</p>
                   </div>
@@ -241,10 +241,10 @@ export default function ContactPage() {
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
             Speak with one of our exterior cleaning specialists right now.
           </p>
-          <a href="tel:9047045962">
+          <a href="tel:9047673233">
             <Button size="lg" className="bg-[#0068B3] hover:bg-[#005a9c] text-xl px-12 py-8 h-auto">
               <Phone className="mr-3 h-6 w-6" />
-              Call (904) 704-5962
+              Call (904) 767-3233
             </Button>
           </a>
         </div>

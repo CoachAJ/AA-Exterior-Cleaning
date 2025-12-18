@@ -15,9 +15,9 @@ export default function Header() {
       <div className="bg-[#0068B3] text-white">
         <div className="container mx-auto px-4 py-2 flex flex-wrap justify-between items-center text-sm">
           <div className="flex items-center gap-4">
-            <a href="tel:9047045962" className="flex items-center gap-2 hover:text-gray-200">
+            <a href="tel:9047673233" className="flex items-center gap-2 hover:text-gray-200">
               <Phone className="h-4 w-4" />
-              <span>(904) 704-5962</span>
+              <span>(904) 767-3233</span>
             </a>
             <a href="mailto:info@aaexteriorcleaning.com" className="hidden sm:flex items-center gap-2 hover:text-gray-200">
               <Mail className="h-4 w-4" />

@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'AA\'s Exterior Cleaning | Pressure Washing & Soft Washing Jacksonville, FL',
-  description: 'Professional exterior cleaning services in Jacksonville, FL. Licensed & insured. Specializing in soft washing, pressure washing, roof cleaning, and commercial exterior cleaning. Florida Lic #L25000489655. Call 904-704-5962.',
+  description: 'Professional exterior cleaning services in Jacksonville, FL. Licensed & insured. Specializing in soft washing, pressure washing, roof cleaning, and commercial exterior cleaning. Florida Lic #L25000489655. Call 904-767-3233.',
   keywords: [
     'pressure washing jacksonville fl',
     'soft washing jacksonville florida',

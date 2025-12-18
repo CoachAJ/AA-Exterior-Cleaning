@@ -35,8 +35,8 @@ export default function SuccessPage() {
             <div className="bg-[#0068B3] text-white rounded-lg p-6 mb-8">
               <p className="font-bold text-lg mb-2">Need Immediate Assistance?</p>
               <p className="mb-4">Call us now for same-day quotes:</p>
-              <a href="tel:9047045962" className="text-2xl font-bold hover:underline">
-                (904) 704-5962
+              <a href="tel:9047673233" className="text-2xl font-bold hover:underline">
+                (904) 767-3233
               </a>
             </div>
 
@@ -47,7 +47,7 @@ export default function SuccessPage() {
                   Return to Homepage
                 </Button>
               </Link>
-              <a href="tel:9047045962">
+              <a href="tel:9047673233">
                 <Button size="lg" variant="outline" className="border-2 border-[#0068B3] text-[#0068B3] hover:bg-[#0068B3] hover:text-white">
                   <Phone className="mr-2 h-5 w-5" />
                   Call Now
