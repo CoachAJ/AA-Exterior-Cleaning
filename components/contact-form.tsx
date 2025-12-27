@@ -1,13 +1,55 @@
+'use client'
+
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 
 export function ContactForm() {
+  const router = useRouter()
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
+    // Encode form data for Netlify
+    const encode = (data: Record<string, string>) => {
+      return Object.keys(data)
+        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .join('&')
+    }
+
+    const data: Record<string, string> = {
+      'form-name': 'contact',
+    }
+    formData.forEach((value, key) => {
+      data[key] = value.toString()
+    })
+
+    try {
+      await fetch('/__forms.html', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode(data),
+      })
+      router.push('/success')
+    } catch (error) {
+      console.error('Form error:', error)
+      alert('There was an error. Please call us at (904) 767-3233.')
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <form
       name="contact"
       method="POST"
-      action="/success"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      onSubmit={handleSubmit}
       className="space-y-6"
     >
       <input type="hidden" name="form-name" value="contact" />
@@ -116,8 +158,9 @@ export function ContactForm() {
         type="submit" 
         size="lg" 
         className="w-full bg-[#0068B3] hover:bg-[#005a9c] text-lg py-6"
+        disabled={isSubmitting}
       >
-        Submit Request
+        {isSubmitting ? 'Submitting...' : 'Submit Request'}
       </Button>
     </form>
   )
