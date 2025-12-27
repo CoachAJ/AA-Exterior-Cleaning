@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-import { redirect } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
-import { submitContactForm } from '@/app/actions/contact'
+import { ContactForm } from '@/components/contact-form'
 
 export const metadata: Metadata = {
   title: 'Contact Us | AA\'s Exterior Cleaning Jacksonville',
@@ -14,12 +13,6 @@ export const metadata: Metadata = {
     'exterior cleaning estimate',
     'jacksonville cleaning services contact'
   ]
-}
-
-async function handleSubmit(formData: FormData) {
-  'use server'
-  await submitContactForm(formData)
-  redirect('/success')
 }
 
 export default function ContactPage() {
@@ -51,107 +44,7 @@ export default function ContactPage() {
                 Fill out the form below and we'll get back to you within 24 hours with a detailed quote for your project.
               </p>
 
-              <form action={handleSubmit} className="space-y-6">
-
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                  />
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                      Phone Number *
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="serviceType" className="block text-sm font-medium text-gray-700 mb-2">
-                      Service Type *
-                    </label>
-                    <select
-                      id="serviceType"
-                      name="serviceType"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                    >
-                      <option value="">Select a service...</option>
-                      <option value="roof-cleaning">Roof Cleaning</option>
-                      <option value="house-washing">House Washing</option>
-                      <option value="driveway-cleaning">Driveway/Concrete Cleaning</option>
-                      <option value="paver-cleaning">Paver Cleaning & Sealing</option>
-                      <option value="deck-fence">Deck & Fence Cleaning</option>
-                      <option value="gutter-cleaning">Gutter Cleaning</option>
-                      <option value="commercial">Commercial Services</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="propertyType" className="block text-sm font-medium text-gray-700 mb-2">
-                      Property Type *
-                    </label>
-                    <select
-                      id="propertyType"
-                      name="propertyType"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                    >
-                      <option value="">Select property type...</option>
-                      <option value="residential">Residential</option>
-                      <option value="commercial">Commercial</option>
-                      <option value="hoa">HOA/Property Management</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Project Details
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    placeholder="Please describe your cleaning needs, property size, and any specific concerns..."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                  ></textarea>
-                </div>
-
-                <Button type="submit" size="lg" className="w-full bg-[#0068B3] hover:bg-[#005a9c] text-lg py-6">
-                  Submit Request
-                </Button>
-              </form>
+              <ContactForm />
             </div>
 
             {/* Contact Information */}
