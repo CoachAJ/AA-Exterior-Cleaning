@@ -1,46 +1,13 @@
-'use client'
-
-import { useState } from 'react'
-import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 
 export function ContactForm() {
-  const router = useRouter()
-  const [isSubmitting, setIsSubmitting] = useState(false)
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    const form = e.currentTarget
-    const formData = new FormData(form)
-
-    try {
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData as any).toString(),
-      })
-
-      if (response.ok) {
-        router.push('/success')
-      } else {
-        alert('There was an error submitting the form. Please try again or call us directly.')
-        setIsSubmitting(false)
-      }
-    } catch (error) {
-      alert('There was an error submitting the form. Please try again or call us directly.')
-      setIsSubmitting(false)
-    }
-  }
-
   return (
     <form
       name="contact"
       method="POST"
+      action="/success"
       data-netlify="true"
-      netlify-honeypot="bot-field"
-      onSubmit={handleSubmit}
+      data-netlify-honeypot="bot-field"
       className="space-y-6"
     >
       <input type="hidden" name="form-name" value="contact" />
@@ -149,9 +116,8 @@ export function ContactForm() {
         type="submit" 
         size="lg" 
         className="w-full bg-[#0068B3] hover:bg-[#005a9c] text-lg py-6"
-        disabled={isSubmitting}
       >
-        {isSubmitting ? 'Submitting...' : 'Submit Request'}
+        Submit Request
       </Button>
     </form>
   )
