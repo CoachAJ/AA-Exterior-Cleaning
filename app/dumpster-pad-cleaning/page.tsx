@@ -99,9 +99,11 @@ export default function DumpsterPadCleaningPage() {
               <h2 className="text-2xl font-bold mb-2 text-center">Get a Commercial Quote</h2>
               <p className="text-gray-600 text-center mb-6">Recurring service plans available</p>
               
-              <form action="/api/contact" method="POST" className="space-y-4">
+              <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" className="space-y-4">
+                <input type="hidden" name="form-name" value="contact" />
                 <input type="hidden" name="service" value="Dumpster Pad Cleaning" />
                 <input type="hidden" name="type" value="commercial" />
+                <input type="hidden" name="bot-field" />
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold mb-1">Contact Name *</label>
                   <input 

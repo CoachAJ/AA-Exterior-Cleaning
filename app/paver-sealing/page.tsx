@@ -98,8 +98,10 @@ export default function PaverSealingPage() {
               <h2 className="text-2xl font-bold mb-2 text-center">Get Your Free Estimate</h2>
               <p className="text-gray-600 text-center mb-6">Transform your pavers today</p>
               
-              <form action="/api/contact" method="POST" className="space-y-4">
+              <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" className="space-y-4">
+                <input type="hidden" name="form-name" value="contact" />
                 <input type="hidden" name="service" value="Paver Cleaning & Sealing" />
+                <input type="hidden" name="bot-field" />
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold mb-1">Name *</label>
                   <input 
