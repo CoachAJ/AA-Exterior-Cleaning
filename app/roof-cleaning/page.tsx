@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { Button } from '@/components/ui/button'
+import NetlifyForm from '@/components/NetlifyForm'
 import { 
   CheckCircle, 
   Shield, 
@@ -98,61 +99,7 @@ export default function RoofCleaningPage() {
             <div className="bg-white rounded-2xl shadow-2xl p-8 text-gray-900">
               <h2 className="text-2xl font-bold mb-2 text-center">Get Your Free Estimate</h2>
               <p className="text-gray-600 text-center mb-6">Same-week service available</p>
-              
-              <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" className="space-y-4">
-                <input type="hidden" name="form-name" value="contact" />
-                <input type="hidden" name="service" value="Roof Cleaning" />
-                <input type="hidden" name="bot-field" />
-                <div>
-                  <label htmlFor="name" className="block text-sm font-semibold mb-1">Name *</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold mb-1">Phone *</label>
-                  <input 
-                    type="tel" 
-                    id="phone" 
-                    name="phone" 
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                    placeholder="(904) 555-1234"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-semibold mb-1">Email</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    name="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                    placeholder="you@email.com"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="zip" className="block text-sm font-semibold mb-1">ZIP Code *</label>
-                  <input 
-                    type="text" 
-                    id="zip" 
-                    name="zip" 
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                    placeholder="32256"
-                  />
-                </div>
-                <Button type="submit" size="lg" className="w-full bg-[#0068B3] hover:bg-[#005a9c] text-lg py-6 h-auto font-bold">
-                  Request Free Quote
-                </Button>
-                <p className="text-xs text-gray-500 text-center">
-                  We'll contact you within 24 hours
-                </p>
-              </form>
+              <NetlifyForm service="Roof Cleaning" />
             </div>
           </div>
         </div>

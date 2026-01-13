@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { Button } from '@/components/ui/button'
+import NetlifyForm from '@/components/NetlifyForm'
 import { 
   CheckCircle, 
   Shield, 
@@ -98,77 +99,7 @@ export default function ParkingLotCleaningPage() {
             <div className="bg-white rounded-2xl shadow-2xl p-8 text-gray-900">
               <h2 className="text-2xl font-bold mb-2 text-center">Get a Commercial Quote</h2>
               <p className="text-gray-600 text-center mb-6">Free property assessment</p>
-              
-              <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" className="space-y-4">
-                <input type="hidden" name="form-name" value="contact" />
-                <input type="hidden" name="service" value="Parking Lot Cleaning" />
-                <input type="hidden" name="type" value="commercial" />
-                <input type="hidden" name="bot-field" />
-                <div>
-                  <label htmlFor="name" className="block text-sm font-semibold mb-1">Contact Name *</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="company" className="block text-sm font-semibold mb-1">Business/Property Name *</label>
-                  <input 
-                    type="text" 
-                    id="company" 
-                    name="company" 
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                    placeholder="Business or property name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold mb-1">Phone *</label>
-                  <input 
-                    type="tel" 
-                    id="phone" 
-                    name="phone" 
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                    placeholder="(904) 555-1234"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-semibold mb-1">Email</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    name="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                    placeholder="you@business.com"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="size" className="block text-sm font-semibold mb-1">Approximate Lot Size</label>
-                  <select 
-                    id="size" 
-                    name="size"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0068B3] focus:border-transparent"
-                  >
-                    <option value="">Select size...</option>
-                    <option value="small">Small (under 50 spaces)</option>
-                    <option value="medium">Medium (50-150 spaces)</option>
-                    <option value="large">Large (150-500 spaces)</option>
-                    <option value="xlarge">Extra Large (500+ spaces)</option>
-                    <option value="garage">Parking Garage</option>
-                  </select>
-                </div>
-                <Button type="submit" size="lg" className="w-full bg-[#0068B3] hover:bg-[#005a9c] text-lg py-6 h-auto font-bold">
-                  Request Quote
-                </Button>
-                <p className="text-xs text-gray-500 text-center">
-                  We'll contact you within 24 hours
-                </p>
-              </form>
+              <NetlifyForm service="Parking Lot Cleaning" type="commercial" />
             </div>
           </div>
         </div>
