@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
-import { Phone, Mail, Menu, X, ChevronDown } from 'lucide-react'
+import { Phone, Mail, Menu, X, ChevronDown, MessageCircle } from 'lucide-react'
 import { Button } from './ui/button'
 
 export default function Header() {
@@ -19,7 +19,11 @@ export default function Header() {
               <Phone className="h-4 w-4" />
               <span>(904) 767-3233</span>
             </a>
-            <a href="mailto:info@aaexteriorcleaning.com" className="hidden sm:flex items-center gap-2 hover:text-gray-200">
+            <a href="sms:9047673233?body=Hi! I'm interested in a free quote for exterior cleaning services." className="flex items-center gap-2 hover:text-gray-200">
+              <MessageCircle className="h-4 w-4" />
+              <span className="hidden sm:inline">Text Us</span>
+            </a>
+            <a href="mailto:info@aaexteriorcleaning.com" className="hidden md:flex items-center gap-2 hover:text-gray-200">
               <Mail className="h-4 w-4" />
               <span>info@aaexteriorcleaning.com</span>
             </a>
