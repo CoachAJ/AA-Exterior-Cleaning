@@ -61,8 +61,31 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      {/* Video Section */}
       <section className="py-16 md:py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">See Us In Action</h2>
+            <p className="text-lg text-gray-700 mb-8">
+              Watch how we transform properties with our professional exterior cleaning services.
+            </p>
+            <div className="relative w-full aspect-video max-w-3xl mx-auto rounded-xl overflow-hidden shadow-2xl">
+              <iframe 
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/eDlEIhfvwtA?si=YU5Hs6tDJe-ImV3c" 
+                title="AA's Exterior Cleaning - Professional Pressure Washing Jacksonville FL"
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
             Why Choose AA's Exterior Cleaning?
