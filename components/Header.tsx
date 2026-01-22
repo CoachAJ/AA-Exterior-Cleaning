@@ -38,9 +38,9 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center gap-3">
-            <Image 
-              src="/logo.png" 
-              alt="AA's Exterior Cleaning Logo" 
+            <Image
+              src="/logo.png"
+              alt="AA's Exterior Cleaning Logo"
               width={240}
               height={80}
               priority
@@ -58,9 +58,9 @@ export default function Header() {
             <Link href="/" className="text-gray-700 hover:text-[#0068B3] font-medium transition-colors">
               Home
             </Link>
-            
+
             {/* Residential Dropdown */}
-            <div 
+            <div
               className="relative group"
             >
               <Link href="/residential" className="text-gray-700 hover:text-[#0068B3] font-medium transition-colors flex items-center gap-1 py-4">
@@ -81,12 +81,15 @@ export default function Header() {
                   <Link href="/paver-sealing" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#0068B3]">
                     Paver Cleaning & Sealing
                   </Link>
+                  <Link href="/driveway-washing" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#0068B3]">
+                    Driveway Washing
+                  </Link>
                 </div>
               </div>
             </div>
 
             {/* Commercial Dropdown */}
-            <div 
+            <div
               className="relative group"
             >
               <Link href="/commercial" className="text-gray-700 hover:text-[#0068B3] font-medium transition-colors flex items-center gap-1 py-4">
@@ -136,7 +139,7 @@ export default function Header() {
             <Link href="/" className="text-gray-700 hover:text-[#0068B3] font-medium py-2" onClick={() => setMobileMenuOpen(false)}>
               Home
             </Link>
-            
+
             {/* Mobile Residential Section */}
             <div className="border-t pt-2">
               <span className="text-xs text-gray-500 uppercase tracking-wide">Residential</span>
@@ -151,6 +154,9 @@ export default function Header() {
               </Link>
               <Link href="/paver-sealing" className="block text-gray-600 hover:text-[#0068B3] py-1 pl-4 text-sm" onClick={() => setMobileMenuOpen(false)}>
                 → Paver Cleaning & Sealing
+              </Link>
+              <Link href="/driveway-washing" className="block text-gray-600 hover:text-[#0068B3] py-1 pl-4 text-sm" onClick={() => setMobileMenuOpen(false)}>
+                → Driveway Washing
               </Link>
             </div>
 
@@ -176,7 +182,7 @@ export default function Header() {
                 About Us
               </Link>
             </div>
-            
+
             <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="mt-2">
               <Button size="lg" className="w-full bg-[#0068B3] hover:bg-[#005a9c]">
                 Get Free Quote

@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://aaexteriorcleaning.com'
-  
+
   return [
     {
       url: baseUrl,
@@ -49,6 +49,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/paver-sealing`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/driveway-washing`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
